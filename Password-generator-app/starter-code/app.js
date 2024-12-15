@@ -7,7 +7,7 @@ let isNumbers = false;
 let isSymbols = false;
 
 const generateButton = document.getElementById("generateButton")
-
+const copyButton = document.getElementById("iconCopy")
 
 const uppercaseButton = document.getElementById("upperButton") 
 const lowercaseButton = document.getElementById("lowerButton") 
@@ -130,10 +130,6 @@ function randomize() {
     let counter = 0;
     let length = Number(slider.value);
     let result = '';
-    
-    console.log(total);
-    
-
 
 
     while (counter < length) {
@@ -142,6 +138,14 @@ function randomize() {
     }
     const generatedPassowrd = document.getElementById("generatedPassword")
     generatedPassowrd.textContent = result
+
+    if (!booleanTab[0] && !booleanTab[1] && !booleanTab[2] && !booleanTab[3]) {
+        generatedPassowrd.textContent = "Password not generated!"
+        generatedPassowrd.style.opacity = "50%"
+    } else {
+        generatedPassowrd.style.opacity = "100%"
+    }
+
 
     if (result.length > 10) {
         grade += 20
@@ -172,15 +176,22 @@ function randomize() {
         grade3.style.backgroundColor = "green"
         grade4.style.backgroundColor = "green"
         gradeText.textContent = "STRONG"
+    } else {
+        grade1.style.backgroundColor = "#24232C"
+        grade2.style.backgroundColor = "#24232C"
+        grade3.style.backgroundColor = "#24232C"
+        grade4.style.backgroundColor = "#24232C"
     }
 
-    if (result.length === 0) {
-        console.log("wrong");
+    copyButton.addEventListener('click', () => {
+        console.log('haslo skopiowane: ' + result);
+        navigator.clipboard.writeText(result)
         
-    }
+    })
     
 }
 
 generateButton.onclick = () => {
     randomize()
 }
+
