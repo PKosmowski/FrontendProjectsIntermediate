@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    color: #E6E5EA;
+    background-image: linear-gradient(#14131B, #08070B);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: "JetBrains Mono"
+}
+
+.title {
+    color: #817D92;
+    font-size: 24px;
+}
+
+#generatedPasswordContainer, #options {
+    background-color: #24232C;
+    width: 540px;
+    padding: 19px 32px 19px 32px;
+}
+
+#generatedPasswordContainer {
+    margin-top: 31px;
+    height: 80px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#generatedPassword {
+    font-size: 32px;
+}
+
+#iconCopy {
+    width: 21px;
+    height: 24px;
+}
+
+#iconCopy:hover {
+    color: red;
+}
+
+#options {
+    height: 528px;
+    display: flex;
+    flex-direction: column;
+}
+
+.length-container {
+    display: flex;
+    flex-direction: column;
+}
+.character-length {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+#characterLengthNumber {
+    font-size: 32px;
+    color: #A4FFAF;
+
+}
+
+.slider {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    outline: none;
+    cursor: pointer;
+    background: #A4FFAF;
+    margin-bottom: 32px;
+}
+
+.slider::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.slider::-moz-range-track {
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 28px;
+    width: 28px;
+    background-color: #E6E5EA;
+    border-radius: 50%;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background-color: #08070B;
+    outline: 2px solid #A4FFAF;
+
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.checkbox-container-1,
+.checkbox-container-2,
+.checkbox-container-3,
+.checkbox-container-4 {
+    display: flex;
+    text-indent: 15px;
+    font-size: 18px;
+}
+
+#buttonCheck {
+    background-color: #24232C;
+    border: none;
+    outline: 2px solid #E6E5EA;
+    width: 20px;
+    height: 20px;
+}
+
+#buttonCheck:hover {
+    outline: 2px solid #A4FFAF;
+}
+
+#buttonCheck svg {
+    display: none; 
+}
+
+.strength-container {
+    margin-top: 12px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #817D92;
+    background-color: #18171F;
+    padding: 15px 32px 15px 32px;
+}
+
+.grade {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: 800;
+    font-size: 24px;
+    color: #E6E5EA;
+}
+
+#gradeContainers {
+    display: flex;
+    gap: 5px;
+}
+
+#gradeContainers * {
+    border: 2px solid #E6E5EA;
+    width: 10px;
+    height: 28px;
+}
+
+#generateButton {
+    background-color: #A4FFAF;
+    font-size: 18px;
+    font-weight: 700;
+    height: 65px;
+    margin-top: 32px;
+}
+
+#generateButton:hover {
+    border: 5px solid #A4FFAF;
+    background-color: #24232C;
+    color: #A4FFAF;
+}
