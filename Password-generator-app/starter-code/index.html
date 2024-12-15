@@ -23,30 +23,30 @@
         <div id="characterLengthNumber">10</div>
       </div>
       <div id="sliderContainer">
-        <input type="range" min="1" max="20", value="10" class="slider" id="lenthRange" />
+        <input type="range" min="0" max="20", value="10" class="slider" id="lengthRange" />
       </div>
     </div>
     <div class="checkbox-container">
       <div class="checkbox-container-1">
-        <button id="buttonCheck"><svg id="checkboxImg1" width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path stroke="#18171F" stroke-width="3" fill="none" d="M1 5.607 4.393 9l8-8"/></svg></button>
+        <button id="upperButton" class="buttonCheck"><svg id="checkboxImg1" width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path stroke="#18171F" stroke-width="3" fill="none" d="M1 5.607 4.393 9l8-8"/></svg></button>
         <div>Include Uppercase Letters</div>
       </div>
       <div class="checkbox-container-2">
-        <button id="buttonCheck"><svg id="checkboxImg1" width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path stroke="#18171F" stroke-width="3" fill="none" d="M1 5.607 4.393 9l8-8"/></svg></button>
+        <button id="lowerButton" class="buttonCheck"><svg id="checkboxImg2" width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path stroke="#18171F" stroke-width="3" fill="none" d="M1 5.607 4.393 9l8-8"/></svg></button>
         <div>Include Lowercase Letters</div>
       </div>
       <div class="checkbox-container-3">
-        <button id="buttonCheck"><svg id="checkboxImg1" width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path stroke="#18171F" stroke-width="3" fill="none" d="M1 5.607 4.393 9l8-8"/></svg></button>
+        <button id="numbersButton" class="buttonCheck"><svg id="checkboxImg3" width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path stroke="#18171F" stroke-width="3" fill="none" d="M1 5.607 4.393 9l8-8"/></svg></button>
         <div>Include Numbers</div>
       </div>
       <div class="checkbox-container-4">
-        <button id="buttonCheck"><svg id="checkboxImg1" width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path stroke="#18171F" stroke-width="3" fill="none" d="M1 5.607 4.393 9l8-8"/></svg></button>
+        <button id="symbolsButton" class="buttonCheck"><svg id="checkboxImg4" width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path stroke="#18171F" stroke-width="3" fill="none" d="M1 5.607 4.393 9l8-8"/></svg></button>
         <div>Include Symbols</div>
       </div>
       <div class="strength-container">
         <div>STRENGTH</div>
         <div class="grade">
-          <div>GRADE</div>
+          <div id="gradeText">GRADE</div>
           <div id="gradeContainers">
             <div id="gradeContainer1"></div>
             <div id="gradeContainer2"></div>
@@ -58,5 +58,6 @@
       <button id="generateButton">GENERATE</button>
     </div>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -124,7 +124,7 @@ body {
     font-size: 18px;
 }
 
-#buttonCheck {
+.buttonCheck {
     background-color: #24232C;
     border: none;
     outline: 2px solid #E6E5EA;
@@ -132,12 +132,13 @@ body {
     height: 20px;
 }
 
-#buttonCheck:hover {
+.buttonCheck:hover {
     outline: 2px solid #A4FFAF;
 }
 
-#buttonCheck svg {
+.buttonCheck svg {
     display: none; 
+    margin-left: -2px;
 }
 
 .strength-container {
@@ -185,3 +186,4 @@ body {
     background-color: #24232C;
     color: #A4FFAF;
 }
+
