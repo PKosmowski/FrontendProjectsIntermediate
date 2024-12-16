@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin: 80px;
+}
+
+.title-container {
+    display: flex;
+}
+
+.title-container {
+    position: relative;
+}
+
+.title-container img:nth-child(1) {
+    position: absolute;
+    right: 1100px;
+}
+.title-container img:nth-child(3) {
+    position: absolute;
+    left: 1100px;
+}
