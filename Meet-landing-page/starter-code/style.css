@@ -30,9 +30,7 @@ body {
 
 .title-container img:nth-child(1) {
     position: absolute;
-    right: 1100px;
 }
 .title-container img:nth-child(3) {
     position: absolute;
-    left: 1100px;
 }
