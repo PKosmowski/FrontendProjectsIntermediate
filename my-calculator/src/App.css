@@ -1,1 +1,42 @@
+.container-calc {
+  background-color: beige;
+  color: black;
+  width: 500px;
+  height: 800px;
+}
 
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.in-out-numbs {
+  background-color: red;
+  height: 100px;
+  padding: 20px;
+  font-size: xx-large;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.buttons {
+  display: grid;
+  width: 100%;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px;
+  font-size: xx-large;
+
+}
+
+.buttons div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 5px solid black;
+  margin: 10px;
+  height: 90px;
+}
