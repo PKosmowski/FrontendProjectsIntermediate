@@ -1,4 +1,4 @@
-import Answer from '@/app/components/Answer'
+// import { Answer } from '@/app/components'
 
 let questions = require('../../data.json')
 
