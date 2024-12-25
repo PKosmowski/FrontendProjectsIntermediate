@@ -1,5 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+*.sketch
+*.fig
 
+###############################################
+*.xd
+
+.DS_Store
+.prettierignore
 # dependencies
 /node_modules
 /.pnp
