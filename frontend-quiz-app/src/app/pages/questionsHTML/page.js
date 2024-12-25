@@ -6,18 +6,26 @@ let actual_question = questions.quizzes[0].questions[i]
 export default function HTMLQuestions() {
 
     return (
-        <div>
+        <div className='flex gap-4'>
+            <Question question={actual_question.question} />
             <Answers/>
         </div>
     )
 }
 
 function Answers() {
-    console.log(actual_question);
+    actual_question.options.map((ans) => {
+        <button>{ans}</button>
+    });
     
     return (
         <div className='container-answers'>
-            testss
+            <ol className='flex flex-col'>
+                {actual_question.options.map((ans, key) => {
+                    return <button key={key}>{ans}</button>
+                })}
+            </ol>
+            
         </div>
     )
 }
