@@ -14,6 +14,9 @@ export default {
         "dark-navy": "#313E51",
         circles: "#2D3949"
       },
+      spacing: {
+        'answerWidth': '35rem'
+      }
     },
   },
   plugins: [],
