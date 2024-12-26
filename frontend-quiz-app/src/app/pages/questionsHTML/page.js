@@ -16,7 +16,7 @@ function Answers({answers}) {
 }
 
 function Answer({ text }) {
-    return <button className='bg-red-400 p-6 w-answerWidth rounded'>{text}</button>
+    return <button className='bg-red-400 p-6 w-answerWidth rounded' >{text}</button>
 }
 
 function Question({question, index}) {
