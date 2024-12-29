@@ -23,7 +23,7 @@ function Question({question, index}) {
     return (
         <div>
             <div>Question {index+1} of 10</div>
-            <div>{question}</div>
+            <div className='text-4xl'>{question}</div>
         </div>
     )
 }
