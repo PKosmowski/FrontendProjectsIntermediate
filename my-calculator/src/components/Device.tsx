@@ -1,3 +1,4 @@
+import DigitButton from "./DigitButton"
 
 
 export default function Device() {
@@ -13,7 +14,7 @@ export default function Device() {
                 <div>x^2</div>
                 <div>sqrt(x)</div>
                 <div>/</div>
-                <div>7</div>
+                <DigitButton value={7}/>
                 <div>8</div>
                 <div>9</div>
                 <div>x</div>
